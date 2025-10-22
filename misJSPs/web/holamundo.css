@@ -1,0 +1,11 @@
+/*
+    holamundo.css: Estilos para la página jsp holamundo.jsp
+    Created on : 13-nov-2015, 19:34:03
+    Author     : Pedro Andrés Díaz Gómez
+*/
+body {
+    padding-left: 8em;
+    font-family: Georgia, "Times New Roman", serif;
+    color: indigo;
+    background-color: #d8da3d
+}

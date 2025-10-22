@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Identificación</title>
+        <link rel="stylesheet" href="estilos.css" type="text/css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="Author" content="Pedro">
+    </head>
+    <!--<body bgcolor="#99ff66" -->
+    <body class="fondoV">
+        <h2>Validación</h2>
+        <hr>
+        <!-- No es recomendable utilizar rutas absolutas como esta: -->
+        <form method="post" action="LoginServlet">
+            Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="NOM"><br/>
+            Contraseña:
+            <input type="password" name="CON"/>
+            <p>
+                <input type="submit" value="Enviar formulario"/>
+            </p>
+        </form>
+        <hr>
+        <a href='index.html'>Volver al menú anterior</a>
+    </body>
+</html>

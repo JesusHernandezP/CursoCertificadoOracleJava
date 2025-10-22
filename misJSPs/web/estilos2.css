@@ -1,0 +1,40 @@
+/* Color de fondo habitual */
+body.fondo {
+    background-color: #bbbbcc;
+}
+
+/* Colores de uso */
+.colVER {
+    color: forestgreen;
+}
+.colMAR {
+    color: chocolate;
+}
+
+/* Tipo de letra */
+
+/* Formato para las tablas */
+table.lineas {
+    border-top: solid captiontext;
+    border-right: solid captiontext;
+    border-bottom: solid captiontext;
+    border-left: solid captiontext;
+}
+
+.fuente {
+    font-family: Verdana, sans-serif;
+}
+
+/* Cebrado de filas en tablas */
+tr:nth-of-type(even) {
+    background-color: #ddddC5;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Bordes para todas las celdas */
+th, td {
+    border: 1px solid #000;
+}

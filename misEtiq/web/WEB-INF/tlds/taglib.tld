@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee          
+        http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>mitaglib</short-name>
+  <uri>/WEB-INF/tlds/taglib</uri>
+  <!-- Primera etiqueta -->
+  <tag>
+    <description>Primer ejemplo simple</description>
+    <name>holamundo</name>
+    <tag-class>es.etiq.HolaMundoTag</tag-class>
+    <body-content>empty</body-content>
+  </tag>
+  <!-- Segunda etiqueta -->
+  <tag>
+    <description>Ejemplo con un atributo</description>
+    <name>miFecha</name>
+    <tag-class>es.etiq.MiFechaTag</tag-class>
+    <attribute>
+      <name>atrib1</name>
+      <required>false</required>
+    </attribute>
+  </tag>
+  <!-- Tercera etiqueta -->
+  <tag>
+    <name>cuerpoTag</name>
+    <tag-class>es.etiq.CuerpoTag</tag-class>
+    <body-content>JSP</body-content>
+  </tag>
+  <!-- Cuarta etiqueta -->
+  <tag>
+    <name>cuerpoRepTag</name>
+    <tag-class>es.etiq.CuerpoRepTag</tag-class>
+    <body-content>JSP</body-content>
+    <attribute>
+        <name>veces</name>
+        <required>true</required>
+    </attribute>
+  </tag>
+</taglib>

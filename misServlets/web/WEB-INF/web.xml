@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+         xmlns="http://xmlns.jcp.okrg/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- ** Introducido para prácticas ************************************* -->
+    <display-name>Ejemplos de Servlets</display-name>
+    <description>Curso componentes JEE</description>
+    
+    <!-- ************** DATOS DE SEGURIDAD PRUEBAS CON JAAS *****************-->
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login.html</form-login-page>
+            <form-error-page>/error.html</form-error-page>
+        </form-login-config>
+    </login-config>
+    
+    <security-role>
+        <role-name>Admin</role-name>
+    </security-role>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>recursosAdmin</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <!-- ************** DATOS DE SEGURIDAD PRUEBAS CON SAAJ *****************-->
+
+    <!--Parametros de contexto (comunes a todos los servlets de este Contexto-->
+    <context-param>
+        <description>Usuario y contrasenia generales</description>
+        <param-name>usuario</param-name>
+        <param-value>Pedro</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contrasenia</param-name>
+        <param-value>secreto</param-value>
+    </context-param>
+    <!-- Fin parametros de contexto -->
+    <!-- ******************************************************************* -->
+    <!--
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>es.ejemplos.servlets.WebAppServletListener</listener-class>
+    </listener>
+    -->
+    <servlet>
+        <servlet-name>PatronURLServlet</servlet-name>
+        <servlet-class>es.ejemplos.servlets.PatronURLServlet</servlet-class>
+        <init-param>
+            <param-name>contrasenia</param-name>
+            <param-value>parametroServlet</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatronURLServlet</servlet-name>
+        <url-pattern>/PatronURLServlet</url-pattern>
+        <url-pattern>/cosa</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>taglib</short-name>
+  <uri>/WEB-INF/tlds/taglib</uri>
+  <!-- Primera etiqueta -->
+  <tag>
+    <description>Primer ejemplo etiqueta</description>
+    <name>HolaMundoTag</name>
+    <tag-class>com.etiq.HolaMundoTag</tag-class>
+    <body-content>scriptless</body-content>
+  </tag>
+  <!-- Segunda etiqueta -->
+  <tag>
+    <description>Muestra cosas</description>
+    <name>miFecha</name>
+    <tag-class>com.etiq.MiFechaTag</tag-class>
+    <attribute>
+      <name>atrib1</name>
+      <required>false</required>
+    </attribute>
+  </tag>
+</taglib>

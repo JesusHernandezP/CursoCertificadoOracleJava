@@ -1,0 +1,58 @@
+/* Estilos para la aplicación "misServlets" "*/
+/* Color de fondo habitual */
+body.fondo {
+    background-color: #bbbbcc;
+}
+body.fondoV {
+    background-color: greenyellow;
+}
+body.fondoM {
+    background-color: #ffad00;
+}
+
+/* Colores de uso */
+.colVER {
+    color: forestgreen;
+}
+.colMAR {
+    color: chocolate;
+}
+
+img {border: 4px solid darkviolet;}
+
+/* Formato para las tablas */
+table.lineas {
+    border-top: solid captiontext;
+    border-right: solid captiontext;
+    border-bottom: solid captiontext;
+    border-left: solid captiontext;
+}
+
+/* Tipos de fuentes de letra */
+.fuente {
+    font-family: Verdana, sans-serif;
+}
+
+.fuenteC {
+    font-family: Cambria, serif;
+}
+.fuenteMicro {
+    font-size: small; text-align: right;
+}
+
+tr.fondo {
+    background-color: #ffad00;
+}
+/* Cebrado de filas en tablas */
+tr:nth-of-type(even) {
+    background-color: #ddddC5;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Bordes para todas las celdas */
+th, td {
+    border: 1px solid #000;
+}

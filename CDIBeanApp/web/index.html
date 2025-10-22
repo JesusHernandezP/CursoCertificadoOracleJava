@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <title>HTML-Servlet-CDI Bean-JSP</title> 
+        <style> 
+            body{font-family: Arial; background-color: #58d373;} 
+            form{background-color: wheat; padding: 10px; margin: 0 auto; width: 300px; 
+border-radius: 15px;} 
+            label{display: inline-block;  width: 80px;} 
+        </style> 
+    </head> 
+ 
+2/5 
+    <body> 
+        <h2>HTML-Servlet-CDI Bean</h2> 
+        <hr> 
+        <form action = "ControlServlet" method = "post"> 
+            Introduce libros o lista los existentes...<br> 
+            <p> 
+                <label>Título: </label> 
+                <input type="text" size="25" name="titulo"> 
+                <label>Autor :</label> 
+                <input type="text" size="20" name="autor"><br><br> 
+                <input type="submit" name="opcion" value="Grabar"> 
+                <input type="submit" name="opcion" value="Listar"> 
+            </p> 
+        </form> 
+        <hr> 
+    </body> 
+</html> 
