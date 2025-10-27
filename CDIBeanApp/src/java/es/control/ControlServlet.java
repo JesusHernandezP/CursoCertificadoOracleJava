@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest; 
 import javax.servlet.http.HttpServletResponse; 
  
-/** 
- * Aplicación CDIBeanApp: Fichero 2/4 (ControlServlet.java) 
- * @author Pedro Díaz Gómez 
- */ 
+
 @WebServlet(name = "ControlServlet", urlPatterns = {"/ControlServlet"}) 
 public class ControlServlet extends HttpServlet { 
     @Inject  
@@ -52,10 +49,13 @@ response);
         } 
     } 
  
-    @Override 
+  @Override 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException { 
         processRequest(request, response); 
     } 
 } 
+ 
+ 
+
  

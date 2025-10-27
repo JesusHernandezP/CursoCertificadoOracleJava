@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Socket Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="cliwebsock.js"></script>
+        
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9; /* Fondo muy claro para la página */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding-top: 20px;
+            }
+
+            .chat-container {
+                width: 100%;
+                max-width: 450px; /* Ancho máximo para simular la ventana */
+                background-color: white;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            /* Estilos del área de mensajes (output) */
+            #output {
+                height: 300px; /* Altura fija para el historial de chat */
+                overflow-y: auto; /* Permite desplazamiento */
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+                display: flex;
+                flex-direction: column-reverse; /* Hace que los mensajes nuevos aparezcan abajo */
+            }
+            
+            /* Estilo para cada línea de mensaje dentro de #output (generado por JS) */
+            #output p {
+                padding: 8px 12px;
+                margin: 5px 0;
+                border-radius: 12px;
+                line-height: 1.4;
+                max-width: 80%;
+                word-wrap: break-word; /* Para que las palabras largas se envuelvan */
+            }
+
+            /* Estilo para los mensajes que envías (opcional, si los manejas en JS) */
+            #output p[style*="gray"] { /* Asumiendo que el JS usa 'gray' para ENVIADO */
+                background-color: #dcf8c6; /* Verde claro */
+                align-self: flex-end; /* A la derecha */
+            }
+
+            /* Estilo para mensajes recibidos (opcional) */
+            #output p[style*="blue"] { /* Asumiendo que el JS usa 'blue' para RECIBIDO */
+                background-color: #e0e0e0; /* Gris claro */
+                align-self: flex-start; /* A la izquierda */
+            }
+            
+            /* Estilos del formulario de entrada y botones */
+            #mensajeEntrada {
+                width: calc(100% - 10px);
+                padding: 8px 5px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            button {
+                padding: 8px 15px;
+                margin-right: 5px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.2s;
+            }
+
+            button[onclick*="openSocket"] {
+                background-color: #28a745; /* Verde */
+                color: white;
+            }
+
+            button[onclick*="send"] {
+                background-color: #007bff; /* Azul */
+                color: white;
+            }
+
+            button[onclick*="closeSocket"] {
+                background-color: #dc3545; /* Rojo */
+                color: white;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="chat-container">
+            <h2>Aplicación de Web Sockets</h2>
+            
+            <div id="output"></div>
+            
+            <h4>Mensaje:</h4>
+            <div>
+                <input type="text" id="mensajeEntrada" placeholder="Escribe un mensaje..."/>
+            </div>
+            <p>
+                <button type="button" onclick="openSocket();">Open</button>
+                <button type="button" onclick="send();">Send</button>
+                <button type="button" onclick="closeSocket();">Close</button> 
+            </p>
+        </div>
+        
+    </body>
+</html>
