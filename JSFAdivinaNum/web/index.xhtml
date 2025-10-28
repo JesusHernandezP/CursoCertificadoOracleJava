@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Adivina el nuemero</title>
+    </h:head>
+    <h:body>
+        <h2>Adivina el número</h2>
+        <h:form>
+            <h:outputText value="Adivina un número entre 0 y 99"/>
+            <br></br>
+            <h:outputLabel value="Entra tu número: "/>
+            <h:inputText value="#{adivinaBean.adivina}" validatorMessage="Error, escribe un numero dentro del rango de 0 al 99">
+            <f:validateLongRange minimum="0" maximum="99"/>
+            </h:inputText>
+            <br></br>
+            <h:commandButton value="Enviar" action="#{adivinaBean.compruebaNum}"/>
+        </h:form>
+    </h:body>
+</html>
+
