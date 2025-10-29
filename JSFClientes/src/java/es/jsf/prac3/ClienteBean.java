@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-@applicationScoped
+@ApplicationScoped
 @Named(value = "clienteBean")
 public class ClienteBean implements Serializable {
 
@@ -16,6 +17,7 @@ public class ClienteBean implements Serializable {
     private String telefono;
     private double importe;
     private String mensaje;
+    
 // Estructura de datos Java para almacenar los datos en memoria...
     private List<Cliente> listaCliente;
 
@@ -59,6 +61,21 @@ public class ClienteBean implements Serializable {
         this.mensaje = mensaje;
     }
 
+    public String getMensaje() {
+        return this.mensaje;
+    }
+    
+
+    public List<Cliente> getListaCliente() {
+        return listaCliente;
+    }
+
+    public void setListaCliente(List<Cliente> listaCliente) {
+        this.listaCliente = listaCliente;
+    }
+    
+    
+
     public String doGuardar() {
 // return null indica volver a la página anterior
         Cliente cliente = new Cliente(nombre, telefono, importe);
@@ -66,6 +83,7 @@ public class ClienteBean implements Serializable {
         contador++;
         System.out.printf("> Añadido el %2d cliente", contador);
         limpiaFormulario();
+        setMensaje ("Se ha añadido un nuevo usario");
         return null;
 
     }
@@ -74,7 +92,7 @@ public class ClienteBean implements Serializable {
 // Deberá devolver un String con el nombre de la página
 // getters y setters, etc.
 // Lo que necesites además de lo dicho, a introducir desde aquí}
-        return "";
+        return "VerTodos";
 
     }
 

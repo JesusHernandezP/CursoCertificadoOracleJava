@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Lista de clientes</title>
+    </h:head>
+    <h:body>
+        <strong><h3>Lista de clientes</h3></strong>
+            <table cellspacing="3" cellpadding="5" bgcolor="#BBCCDD" border="1">
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Importe</th>
+                <ui:repeat value="#{clienteBean.listaCliente}" var="clien">
+                    <tr><td>#{clien.nombre}</td><td>#{clien.telefono}</td><td>#{clien.importe}</td></tr>
+                </ui:repeat>
+            </table>
+        
+<h:link value="[Volver al inicio]" outcome="index"/>
+            
+    </h:body>
+</html>
