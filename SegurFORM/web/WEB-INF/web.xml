@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+</session-config>
+<security-constraint><!--Primera regla de seguridad -->
+<display-name>Páginas de administración</display-name>
+<web-resource-collection>
+<web-resource-name>pagadmin</web-resource-name>
+<url-pattern>/admin/*</url-pattern><!--Recurso protegido-->
+</web-resource-collection>
+<auth-constraint>
+<role-name>admin</role-name><!--Quién puede acceder-->
+</auth-constraint>
+</security-constraint>
+<security-constraint>
+<display-name>Invitados</display-name>
+<web-resource-collection>
+<web-resource-name>paginvit</web-resource-name>
+<url-pattern>/invitado/*</url-pattern><!--Recurso protegido-->
+</web-resource-collection>
+<auth-constraint>
+<role-name>user</role-name><!--Quién puede acceder-->
+</auth-constraint>
+</security-constraint>
+<login-config>
+<auth-method>FORM</auth-method><!--Método de seguridad elegido-->
+<realm-name>usuariosRealm</realm-name><!--Dato en el servidor-->
+<form-login-config>
+<form-login-page>/loginForm.jsp</form-login-page>
+<form-error-page>/loginError.jsp</form-error-page>
+</form-login-config>
+</login-config>
+<security-role><!--Roles disponibles en el glassfish-web.xml -->
+<description>Administradores</description>
+<role-name>admin</role-name><!--Quién puede acceder-->
+</security-role>
+<security-role>
+<description>Invitados</description>
+<role-name>user</role-name>
+</security-role>
+</web-app>
