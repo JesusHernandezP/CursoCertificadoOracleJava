@@ -33,6 +33,8 @@ public class EjerJAXBMain {
         Marshaller m = jaxb.createMarshaller();
         m.marshal(empleado, fichero);
         
+        
+        
     }
 }
    
