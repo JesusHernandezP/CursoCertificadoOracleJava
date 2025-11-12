@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>FormuLibros.html</title> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head> 
+    <body> 
+        <p>Alta de libros</p> 
+        <form action="http://localhost:8080/WSLibrosREST/recursos/LibrosRecurso" 
+method="post"> 
+            <div> 
+                <label for="codigo" style="display:inline-block; width: 
+100px;">Código</label> 
+                <input id="codigo" type="text" name="codigo" /> 
+            </div> 
+            <div> 
+                <label for="titulo" style="display:inline-block; width: 
+100px;">Título</label> 
+                <input id="titulo" type="text" name="titulo" /> 
+            </div> 
+            <div> 
+                <label for="autor" style="display:inline-block; width: 
+100px;">Autor</label> 
+                <input id="autor" type="text" name="autor" /> 
+            </div> 
+            <div> 
+                <label for="precio" style="display:inline-block; width: 
+100px;">Precio</label> 
+                <input id="precio" type="number" name="precio" /> 
+            </div> 
+            <br/> 
+            <input type="submit" value="Guardar" /> 
+        </form> 
+    </body> 
+</html>
