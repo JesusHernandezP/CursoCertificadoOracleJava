@@ -1,36 +1,43 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <title>FormuLibros.html</title> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </head> 
-    <body> 
-        <p>Alta de libros</p> 
-        <form action="http://localhost:8080/WSLibrosREST/recursos/LibrosRecurso" 
-method="post"> 
-            <div> 
-                <label for="codigo" style="display:inline-block; width: 
-100px;">Código</label> 
-                <input id="codigo" type="text" name="codigo" /> 
-            </div> 
-            <div> 
-                <label for="titulo" style="display:inline-block; width: 
-100px;">Título</label> 
-                <input id="titulo" type="text" name="titulo" /> 
-            </div> 
-            <div> 
-                <label for="autor" style="display:inline-block; width: 
-100px;">Autor</label> 
-                <input id="autor" type="text" name="autor" /> 
-            </div> 
-            <div> 
-                <label for="precio" style="display:inline-block; width: 
-100px;">Precio</label> 
-                <input id="precio" type="number" name="precio" /> 
-            </div> 
-            <br/> 
-            <input type="submit" value="Guardar" /> 
-        </form> 
-    </body> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FormuLibros.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* CSS incrustado para hacer que el body ocupe toda la ventana y centrar */
+            body {
+                display: flex;
+                flex-direction: column; /* Apila el título y el formulario */
+                align-items: center; /* Centra horizontalmente los elementos hijos (p y form) */
+                justify-content: flex-start; /* Alinea los elementos al inicio verticalmente (o usa center para centrado total) */
+                min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+                margin: 0; /* Elimina el margen predeterminado del body */
+            }
+        </style>
+    </head>
+    <body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f9;">
+        <p style="font-size: 1.2em; font-weight: bold; color: #333; margin-top: 0;">Alta de libros</p>
+        <form action="http://localhost:8080/WSLibrosREST/recursos/LibrosRecurso"
+method="post" style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 300px;">
+            <div style="margin-bottom: 15px;">
+                <label for="codigo" style="display:inline-block; width: 100px; font-weight: bold;">Código</label>
+                <input id="codigo" type="text" name="codigo" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: calc(100% - 110px);" />
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="titulo" style="display:inline-block; width: 100px; font-weight: bold;">Título</label>
+                <input id="titulo" type="text" name="titulo" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: calc(100% - 110px);" />
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="autor" style="display:inline-block; width: 100px; font-weight: bold;">Autor</label>
+                <input id="autor" type="text" name="autor" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: calc(100% - 110px);" />
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="precio" style="display:inline-block; width: 100px; font-weight: bold;">Precio</label>
+                <input id="precio" type="number" name="precio" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: calc(100% - 110px);" />
+            </div>
+            <br/>
+            <input type="submit" value="Guardar" style="background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 1em;" />
+        </form>
+    </body>
 </html>

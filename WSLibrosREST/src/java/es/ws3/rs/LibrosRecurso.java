@@ -14,11 +14,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-/* imports...  */ 
- 
-/** 
- * REST Web Service 
- */ 
+
 @Path("LibrosRecurso") 
 public class LibrosRecurso { 
  
@@ -33,6 +29,8 @@ public class LibrosRecurso {
  
     @GET 
     @Path("/libros") 
+        @Produces(MediaType.APPLICATION_XML) 
+
     public List<Libro> getLibros() { 
         return listaLibros; 
     } 
@@ -50,7 +48,7 @@ public class LibrosRecurso {
     } 
      
     @POST 
-    @Produces(MediaType.APPLICATION_JSON) 
+    @Produces(MediaType.APPLICATION_XML) 
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED) 
     public Response addLibro( 
          @FormParam("codigo") int codigo, 
@@ -59,7 +57,7 @@ public class LibrosRecurso {
           @FormParam("precio") double precio) { 
         Libro libro = new Libro(codigo, titulo, autor, precio); 
         listaLibros.add(libro); 
-        String linea = String.format("%d,%s,%s,%f",codigo, titulo, autor, precio); 
+        String linea = String.format(" %d ,%s ,%s ,%f ",codigo, titulo, autor, precio); 
         System.out.println(" > " + linea); 
         return Response.ok(libro).build(); 
     } 
