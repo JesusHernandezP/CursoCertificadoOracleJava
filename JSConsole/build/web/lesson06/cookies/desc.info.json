@@ -1,0 +1,16 @@
+{
+  "title": "Cookies",
+  "desc": "Simple cookie example",
+  "path": "lesson06/cookies/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

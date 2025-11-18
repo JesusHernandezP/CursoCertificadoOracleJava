@@ -1,0 +1,18 @@
+{
+  "title": "Loops with closures.",
+  "desc": "Looping with closures.",
+  "path": "lesson08/loopsClosures/",
+  "main": "index.html",
+  "previewHidden": true,
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

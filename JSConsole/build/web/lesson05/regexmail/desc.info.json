@@ -1,0 +1,17 @@
+{
+  "title": "JavaScript Regular Expressions",
+  "desc": "Validate emails with regex.",
+  "path": "lesson05/regexmail/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": false
+    }
+  ]
+}

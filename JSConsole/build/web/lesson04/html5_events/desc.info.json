@@ -1,0 +1,23 @@
+{
+  "title": "HTML5 Events",
+  "desc": "Handle HTML5 events.",
+  "path": "lesson04/html5_events/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "index.html",
+      "readOnly": false,
+      "printVer": "print/index.html"
+    },
+    {
+      "original": "code.js",
+      "hidden": false,
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

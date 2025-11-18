@@ -1,0 +1,26 @@
+{
+  "title": "Modules.",
+  "desc": "Module code example.",
+  "path": "lesson08/modules/",
+  "main": "index.html",
+  "previewHidden": true,
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "module.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "module_ext.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

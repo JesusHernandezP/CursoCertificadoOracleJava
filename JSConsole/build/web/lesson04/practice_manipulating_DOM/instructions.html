@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Writing JS Code to Handle an HTML5 Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <div id="accordion" style="font-size: 8pt; border: 0;padding: 0;">
+      <ul>
+        <li><a href="#instr-1">Practice #1</a></li>
+        <li><a href="#instr-2">Practice #2</a></li>
+        <li><a href="#instr-3">Practice #3</a></li>
+        <li><a href="#instr-4">Practice #4</a></li>
+        <li><a href="#instr-5">Practice #5</a></li>
+        <li><a href="#instr-6">Practice #6</a></li>
+        <li><a href="#instr-7">Practice #7</a></li>
+      </ul>
+      <div id="instr-1">
+        <ol>
+          <li><p>In the preview window, there is a paragraph labeled 
+              <strong>practice #1</strong> with some text.</p>
+          </li>
+          <li><p>This is the HTML for the paragraph:</p>
+            <code>
+              &lt;p id="p1"&gt;
+              This is some text to replace
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which replaces the paragraph <code>p1</code> with 
+              the paragraph <code>newParagraphElement</code> and 
+              its text: <code>"This is the new Text"</code></p>
+          </li>
+        </ol>
+      </div>
+      <div id="instr-2">
+        <ol>
+          <li><p>In the preview window, there is a paragraph labeled 
+              <strong>practice #2</strong> with some text.</p>
+          </li>
+          <li><p>This is the HTML for the paragraph:</p>
+            <code>
+              &lt;p id="p2"&gt;
+              This is some text to remove
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which removes the paragraph <code>p2</code>
+              and its text.</p>
+          </li>
+        </ol>
+      </div>
+      <div id="instr-3">
+        <ol>
+          <li><p>In the preview window, there is a paragraph labeled 
+              <strong>practice #3</strong> with some text.</p>
+          </li>
+          <li><p>This is the HTML for the paragraph:</p>
+            <code>
+              &lt;p id="p3"&gt;
+              This is some text
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which appends paragraph <code>newParagraphElement</code>
+              and its text <code>"This is the new Text"</code>
+              to the current paragraph <code>p3</code>.
+          </li>
+        </ol>
+      </div>
+      <div id="instr-4">
+        <ol>
+          <li><p>In the preview window, there is a paragraph labeled 
+              <strong>practice #4</strong> with some text.</p>
+          </li>
+          <li><p>This is the HTML for the paragraph:</p>
+            <code>
+              &lt;p id="p4"&gt;
+              This is some text
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which inserts paragraph <code>newParagraphElement</code> 
+              and its text <code>"This is the new Text"</code>
+          <u>before</u> paragraph <code>p4</code>.
+          </li>
+        </ol>
+        <p><strong>Questions:</strong></p>
+        <p>Why node <code>newParagraphElement</code> disappears from 
+          practice #1 when you solve practice #3?</p>
+        <p>Why node <code>newParagraphElement</code> disappears
+          from practice #3 when you solve practice #4?</p>
+      </div>
+
+      <div id="instr-5">
+        <ol>
+          <li><p>In the preview window, there is a paragraph labeled 
+              <strong>practice #5</strong> with some text.</p>
+          </li>
+          <li><p>This is the HTML for the paragraph:</p>
+            <code>
+              &lt;p id="p5"&gt;
+              This is some text to clone
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which clones paragraph <code>p5</code> and adds the 
+              cloned paragraph as a sibling paragraph of <code>p5</code>.
+          </li>
+        </ol>
+
+      </div>
+
+      <div id="instr-6">
+        <ol>
+          <li><p>In the preview window, there is 
+              <strong>practice #6</strong> with two paragraphs.</p>
+          </li>
+          <li><p>This is the HTML for the two paragraphs:</p>
+            <code>
+              &lt;p id="p6-1"&gt;
+              This is some text to move
+              &lt;/p&gt;
+              &lt;p id="p6-2"&gt;
+              This is some text
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which moves paragraph <code>p6-1</code> 
+          <u>after</u> paragraph <code>p6-2</code>.
+          </li>
+        </ol>
+      </div>
+
+      <div id="instr-7">
+        <ol>
+          <li><p>In the preview window, there is a paragraph labeled 
+              <strong>practice #7</strong> with some text.</p>
+          </li>
+          <li><p>This is the HTML for the paragraph:</p>
+            <code>
+              &lt;p id="p7"&gt;
+              This is some text
+              &lt;/p&gt;
+            </code>
+          </li>
+          <li><p>Write some JavaScript code in <code>code.js</code>
+              which appends text <code>"This is the new Text"</code>
+              (only text node, without paragraph)
+              to the current paragraph <code>p7</code>.
+          </li>
+        </ol>
+      </div> 
+    </div> 
+
+    <script>
+      $(function() {
+        $("#accordion").tabs();
+      });
+    </script>
+  </body>
+</html>

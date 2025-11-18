@@ -1,0 +1,4 @@
+body{font-family: arial, verdana, helvetica}
+body div{border: 1pt solid #cccccc; padding: 2pt; margin-top: 1em;}
+body div div{border: 1pt solid #aaaaaa; padding: 0; margin: 0;}
+h1, h2, h3, h4{margin: 0; padding-left: 10pt;}

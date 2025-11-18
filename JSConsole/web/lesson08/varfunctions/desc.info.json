@@ -1,0 +1,17 @@
+{
+  "title": "JavaScript Variables and Functions.",
+  "desc": "Variables and functions.",
+  "path": "lesson08/varfunctions/",
+  "main": "index.html",
+  "previewHidden": true,
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

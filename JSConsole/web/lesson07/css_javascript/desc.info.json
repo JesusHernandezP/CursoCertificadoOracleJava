@@ -1,0 +1,22 @@
+{
+  "title": "CSS and JavaScript",
+  "desc": "Modify styles dinamically with JavaScript.",
+  "path": "lesson07/css_javascript/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "printVer": "print/index.html",
+      "readOnly": false
+    }
+  ]
+}

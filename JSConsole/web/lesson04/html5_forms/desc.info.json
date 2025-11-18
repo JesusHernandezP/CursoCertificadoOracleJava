@@ -1,0 +1,22 @@
+{
+  "title": "HTML5 Forms",
+  "desc": "Create a form with HTML5 elements.",
+  "path": "lesson04/html5_forms/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "hidden": true
+    },
+    {
+      "original": "index.html",
+      "readOnly": false,
+      "printVer": "print/index.html"
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

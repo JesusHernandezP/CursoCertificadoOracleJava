@@ -1,0 +1,18 @@
+{
+  "title": "Statements and Loops",
+  "desc": "Examples for Statements and Loops",
+  "path": "lesson03/statements_and_loops/",
+  "main": "index.html",
+  "previewHidden": "true",
+  "runnable": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

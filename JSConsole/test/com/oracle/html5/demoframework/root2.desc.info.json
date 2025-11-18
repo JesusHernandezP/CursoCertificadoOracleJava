@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Lesson1",
+    "items": [
+      {
+        "title": "example1",
+        "desc": "example1",
+        "instructions": "instructions.html",
+        "path": "lesson02/ex1/",
+        "main": "index.html",
+        "previewHidden": true,
+        "files": [
+          {
+            "name": "js.js",
+            "original": "js.js"
+          }
+        ]
+      },
+      {
+        "title": "example1",
+        "desc": "example1",
+        "instructions": "instructions.html",
+        "path": "lesson02/ex1/",
+        "main": "index.html",
+        "previewHidden": "true",
+        "files": [
+          {
+            "name": "js.js",
+            "original": "js.js"
+          }
+        ]
+      },
+      {
+        "title": "example1",
+        "desc": "example1",
+        "instructions": "instructions.html",
+        "path": "lesson02/ex1/",
+        "main": "index.html",
+        "files": [
+          {
+            "name": "js.js",
+            "original": "js.js"
+          }
+        ]
+      }
+    ]
+  }
+]

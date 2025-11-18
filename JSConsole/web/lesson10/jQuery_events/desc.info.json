@@ -1,0 +1,25 @@
+{
+  "title": "jQuery Events",
+  "desc": "Handle jQuery events",
+  "path": "lesson10/jQuery_events/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "scripts/jquery-1.11.1.js",
+      "hidden": true
+    },
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "readOnly": false
+    }
+  ]
+}

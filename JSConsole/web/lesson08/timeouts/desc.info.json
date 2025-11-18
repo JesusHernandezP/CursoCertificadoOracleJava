@@ -1,0 +1,15 @@
+{
+  "title": "Timeouts and Intervals",
+  "desc": "Timeout and interval functions",
+  "path": "lesson08/timeouts/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

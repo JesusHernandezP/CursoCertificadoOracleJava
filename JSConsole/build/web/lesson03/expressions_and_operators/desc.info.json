@@ -1,0 +1,18 @@
+{
+  "title": "Expressions and Operators",
+  "desc": "Examples for Expressions and Operators",
+  "path": "lesson03/expressions_and_operators/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "runnable": true,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "readOnly": false
+    }
+  ]
+}

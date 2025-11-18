@@ -1,0 +1,29 @@
+[
+  {
+    "link": "/lesson05/numbers/desc.info.json"
+  },
+  {
+    "link": "/lesson05/uri/desc.info.json"
+  },
+  {
+    "link": "/lesson05/dates/desc.info.json"
+  },
+  {
+    "link": "/lesson05/parsing/desc.info.json"
+  },
+  {
+    "link": "/lesson05/regexmail/desc.info.json"
+  },
+  {
+    "link": "/lesson05/arrayMethods/desc.info.json"
+  },
+  {
+    "link": "/lesson05/arrays/desc.info.json"
+  },
+  {
+    "link": "/lesson05/more_arrays/desc.info.json"
+  },
+  {
+    "link": "/lesson05/objectMethods/desc.info.json"
+  }
+]

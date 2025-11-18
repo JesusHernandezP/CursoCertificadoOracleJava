@@ -1,0 +1,56 @@
+[
+  {
+    "link": "/lesson08/varfunctions/desc.info.json"
+  },
+  {
+    "link": "/lesson08/defaultValues/desc.info.json"
+  },
+  {
+    "link": "/lesson08/arrays/desc.info.json"
+  },
+  {
+    "link": "/lesson08/exarrays/desc.info.json"
+  },
+  {
+    "link": "/lesson08/closures/desc.info.json"
+  },
+  {
+    "link": "/lesson08/privateScope/desc.info.json"
+  },
+  {
+    "link": "/lesson08/returnFunctions/desc.info.json"
+  },
+  {
+    "link": "/lesson08/loopsClosures/desc.info.json"
+  },
+  {
+    "link": "/lesson08/modules/desc.info.json"
+  },
+  {
+    "link": "/lesson08/prototypes/desc.info.json"
+  },
+  {
+    "link": "/lesson08/dnd/desc.info.json"
+  },
+  {
+    "link": "/lesson08/timeouts/desc.info.json"
+  },
+  {
+    "link": "/lesson08/workers/desc.info.json"
+  },
+  {
+    "link": "/lesson08/canvas_strokes/desc.info.json"
+  },
+  {
+    "link": "/lesson08/canvas_fill/desc.info.json"
+  },
+  {
+    "link": "/lesson08/canvas_text/desc.info.json"
+  },
+  {
+    "link": "/lesson08/canvas_path1/desc.info.json"
+  },
+  {
+    "link": "/lesson08/canvas_curves/desc.info.json"
+  }
+]

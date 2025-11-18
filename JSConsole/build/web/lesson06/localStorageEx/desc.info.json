@@ -1,0 +1,18 @@
+{
+  "title": "Exercise: Local Storage",
+  "desc": "Save the state of an application.",
+  "instructions": "instructions.html",
+  "path": "lesson06/localStorageEx/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "index.html",
+      "hidden": false
+    }
+  ]
+}

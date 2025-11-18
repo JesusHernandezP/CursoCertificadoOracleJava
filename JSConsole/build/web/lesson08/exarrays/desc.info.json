@@ -1,0 +1,18 @@
+{
+  "title": "Exercise: Array Extended API",
+  "desc": "Use array functions to filter, map and reduce",
+  "path": "lesson08/exarrays/",
+  "main": "index.html",
+  "instructions": "instructions.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false",
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "index.html",
+      "printVer": ""
+    }
+  ]
+}

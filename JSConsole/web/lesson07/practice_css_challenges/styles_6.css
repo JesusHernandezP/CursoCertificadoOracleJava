@@ -1,0 +1,5 @@
+p:nth-of-type(3) {
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5;
+}

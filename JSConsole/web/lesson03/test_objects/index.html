@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript Test Objects</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Objects test", function() {
+        it("Should check that the three objects are empty objects", function() {
+          expect(Object.getOwnPropertyNames(emptyObject1).length).toEqual(0);
+          expect(Object.getOwnPropertyNames(emptyObject2).length).toEqual(0);
+          expect(Object.getOwnPropertyNames(emptyObject3).length).toEqual(0);
+        });
+        it("Should check that there is a constructor named 'Hat' with two parameters: type and size", function() {
+          expect(myHat.type).toEqual("Cowboy");
+          expect(myHat.size).toEqual("medium");
+        });
+        it("Should check that variable name has assigned the value of the property name in myObject", function() {
+          expect(name).toEqual(myObject.name);
+        });
+        it("Should check that variable type has assigned the value of the property type in myObject", function() {
+          expect(type).toEqual(myObject.specs.type);
+        });
+        it("Should check that property height has been deleted from myObject", function() {
+          expect(myObject.height).toBeUndefined();
+        });
+        it("Should check that there is a new property named 'sold' with value 'false' in myObject", function() {
+          expect(myObject.sold).toEqual(false);
+        });
+        it("Should check that there is a new Array named myNumbers with values: 'one', 2 , 'three'", function() {
+          expect(myNumbers.length).toEqual(3);
+          expect(myNumbers[0]).toEqual("one");
+          expect(myNumbers[1]).toEqual(2);
+          expect(myNumbers[2]).toEqual("three");
+        });
+        it("Should check that variable fruit has assigned the value of the fourth element in myArray", function() {
+          expect(fruit).toEqual(myArray[3]);
+        });
+        it("Should check that the myTwoHundredArray is 200 length and that it contains numbers from 0 to 199", function() {
+          expect(myTwoHundredArray.length).toEqual(200);
+          expect(myTwoHundredArray[0]).toEqual(0);
+          expect(myTwoHundredArray[199]).toEqual(199);
+          expect(myTwoHundredArray[50]).toEqual(50);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-tip" title="Should check that the three objects are empty objects">
+      <div class="test-description">Create an object and assign it to an <code>emptyObject</code> variable.</div>
+      <div class="test-popup">To make this test pass you need to create an object by using a different method for each one, assigning the object to an <code>emptyObject</code> variable.</div>
+    </div>
+    <div class="test-tip" title="Should check that there is a constructor named 'Hat' with two parameters: type and size">
+      <div class="test-description">Create a constructor with name <code>Hat</code>.</div>
+      <div class="test-popup">To make this test pass you need to create a constructor with name <code>Hat</code> and assign the parameters passed to the instance variables by using <code>this</code>.</div>
+    </div>
+    <div class="test-tip" title="Should check that variable name has assigned the value of the property name in myObject">
+      <div class="test-description">Assign the <code>name</code> property of <code>myObject</code> to the <code>name</code> variable.</div>
+      <div class="test-popup">To make this test pass you need to assign the <code>name</code> property of <code>myObject</code> to the <code>name</code> variable.</div>
+    </div>
+    <div class="test-tip" title="Should check that variable type has assigned the value of the property type in myObject">
+      <div class="test-description">Assign the <code>type</code> property of <code>myObject</code> to the <code>type</code> variable.</div>
+      <div class="test-popup">To make this test pass you need to assign the <code>type</code> property of <code>myObject</code> to the <code>type</code> variable.</div>
+    </div>
+    <div class="test-tip" title="Should check that property height has been deleted from myObject">
+      <div class="test-description">Use the <code>delete</code> operator.</div>
+      <div class="test-popup">To make this test pass you need to use the <code>delete</code> operator to remove property <code>height</code> from <code>myObject</code>.</div>
+    </div>
+    <div class="test-tip" title="Should check that there is a new property named 'sold' with value 'false' in myObject">
+      <div class="test-description">Use the <code>defineProperty</code> method of <code>Object</code>.</div>
+      <div class="test-popup">To make this test pass you need to use the <code>defineProperty</code> method of <code>Object</code> and define a new property named <code>sold</code>.</div>
+    </div>
+    <div class="test-tip" title="Should check that there is a new Array named myNumbers with values: 'one', 2 , 'three'">
+      <div class="test-description">Create an array by initializing it or by using the <code>new</code> operator.</div>
+      <div class="test-popup">To make this test pass you need to create an array by initializing it with the specified values or by using the <code>new</code> operator and passing the specified values as parameters.</div>
+    </div>
+    <div class="test-tip" title="Should check that variable fruit has assigned the value of the fourth element in myArray">
+      <div class="test-description">Assign the fourth element in <code>myArray</code> to the <code>fruit</code> variable.</div>
+      <div class="test-popup">To make this test pass you need to assign the fourth element (by using square brackets) in <code>myArray</code> to the <code>fruit</code> variable.</div>
+    </div>
+    <div class="test-tip" title="Should check that the myTwoHundredArray is 200 length and that it contains numbers from 0 to 199">
+      <div class="test-description">Use a <code>for</code> loop.</div>
+      <div class="test-popup">To make this test pass you need to use a <code>for</code> loop from 0 to less than 200 and at each iteration call the <code>push</code> method of <code>myTwoHundredArray</code> array.</div>
+    </div>
+  </body>
+</html>

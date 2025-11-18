@@ -1,0 +1,18 @@
+{
+  "title": "CSS Box",
+  "desc": "Change the position of the box.",
+  "path": "lesson07/css_box/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "styles.css",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "printVer": "print/index.html",
+      "readOnly": false
+    }
+  ]
+}

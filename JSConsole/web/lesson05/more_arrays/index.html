@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript Arrays</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Arrays", function() {
+        it("Pop 2 elements from animals", function() {
+          expect(animals).toEqual(["dog", "cat", "horse", "duck", "rabbit"]);
+        });
+        it("Push a 10 to numbers", function() {
+          expect(numbers).toEqual([1, 4, 7, 8, 1, 6, 4, 8, 3, 2, 1, 9, 6, 10]);
+        });
+        it("Remove element at index 2 from floats", function() {
+          expect(floats).toEqual([1.5, 4.4, 8.1, 1.6, 6.8, 4.4, 8.9]);
+        });
+        it("Replace yellow with orange", function() {
+          expect(colors).toEqual(["red", "green", "blue", "orange", "cyan", "magenta"]);
+        });
+        it("Remove all elements from people", function() {
+          expect(people).toEqual([]);
+        });
+        it("Push a function into functions that returns true", function() {
+          expect(functions[0]()).toBe(true);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-header">Modify the arrays to meet the following conditions:
+      <br> Click on the test title for more information.
+    </div>
+    <div class="test-tip" title="Pop 2 elements from animals">
+      <div class="test-popup">
+        You have to remove the two last elements from the array. you can:
+        <ul>
+          <li>Call the <code>array.pop()</code> method twice on the array. Or</li>
+          <li>Use the <code>array.splice(array.length-2,2);</code> method to remove two items at the end of the array.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="test-tip" title="Push a 10 to numbers">
+      <div class="test-popup">Add a 10 at the end of the array using the push method.</div>
+    </div>
+    <div class="test-tip" title="Remove element at index 2 from floats">
+      <div class="test-description">Use the splice function to remove an element.</div>
+      <div class="test-popup">
+        To remove an item using splice use:<br>
+        <code>array.splice(index,1);</code> Where <code>index</code> is the index of the item you want to remove.
+      </div>
+    </div>
+    <div class="test-tip" title="Replace yellow with orange">
+      <div class="test-description">Use the splice function to replace elements.</div>
+      <div class="test-popup">
+        To replace an item using splice use:<br>
+        <code>array.splice(index,1,newItem);</code> Where <code>index</code> is 
+        the index of the item you want to replace and <code>newItem</code> is the item to put
+        instead.
+      </div>
+    </div>
+    <div class="test-tip" title="Remove all elements from people">
+      <div class="test-description">Remove all elements from the array</div>
+      <div class="test-popup">
+        There are multiple ways of removing all the items in an array:<br>
+        Using splice:array.splice(0,array.length-1); <br>
+        Looping: <code>while(array.length>0){array.pop();}</code><br>
+        Or by setting a new array: <code>array = [];</code>
+      </div>
+    </div>
+    <div class="test-tip" title="Push a function into functions that returns true">
+      <div class="test-popup">
+        This is a little challenge in preparation for a further lesson.<br>
+        Using the <code>push</code> method in array how would you add a function to
+        an array?<br>
+        <code>array.push(</code>???<code>);</code>
+      </div>
+    </div>
+    <div class="test-footer">
+      Array methods:<br>
+      <ul>
+        <li><code>array.pop()</code>: removes and return the last item of the array.</li>
+        <li><code>array.push(item)</code>: insert item at the end of the array.<br>
+          <code>item</code>: the item to insert.
+        </li>
+        <li><code>array.splice(index, itemsToRemove, itemsToInsert...)</code><br>
+          &nbsp;&nbsp;&nbsp;<code>index</code>: the index to remove or insert items<br>
+          &nbsp;&nbsp;&nbsp<code>itemsToRemove</code>: the number of items to remove starting at the index.<br>
+          &nbsp;&nbsp;&nbsp<code>itemsToInsert</code>: none, one or many items to insert at the index. Each 
+          item is a separate parameter and you can send as many as you need.<br>
+        </li>
+      </ul>
+
+
+    </div>
+  </body>
+</html>

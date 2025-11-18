@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Strings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    In this exercise you have to parse the data variable and assign the values to the person object:
+    <ol>
+      <li>Split the data variable using <code>var array = data.split(",")</code> function.</li>
+      <li>Assign <code>person.firstName = array[0];</code></li>
+      <li>Assign array[1] to person.lastName</li>
+      <li>Parse array[2] to an integer and assign to person.age</li>
+      <li>Parse array[6] to a float and assign to person.credit</li>
+      <li>Trim the array[7] string and assign to person.rating</li>
+      <li>Create a new Date() object with the birthdate:<br>
+        date.year = array[3];
+        date.month = array[4]-1;
+        date.dayOfMonth = array[5];
+      </li>
+    </ol>
+    The person object should have the following values:
+    <code><pre>person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:32,
+  credit:153.25,
+  rating:"A",
+  birthdate: new Date("1982-10-23"),
+}</pre></code>
+  </body>
+</html>

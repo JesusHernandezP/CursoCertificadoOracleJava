@@ -1,0 +1,46 @@
+{
+  "title": "jQuery Ajax",
+  "desc": "Request data using jQuery Ajax",
+  "path": "lesson10/jQuery_ajax/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "scripts/jquery-1.11.1.js",
+      "hidden": true
+    },
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "scripts/myscript.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "readOnly": false
+    },
+    {
+      "original": "CSS_small.png",
+      "hidden": true
+    },
+    {
+      "original": "JSLogo_small.png",
+      "hidden": true
+    },
+    {
+      "original": "data/file_1.html",
+      "printVer": "print/file_1.html",
+      "hidden": true
+    },
+    {
+      "original": "data/list.json",
+      "hidden": true
+    }
+  ]
+}

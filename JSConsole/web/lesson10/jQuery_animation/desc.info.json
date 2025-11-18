@@ -1,0 +1,34 @@
+{
+  "title": "jQuery Effects",
+  "desc": "Create jQuery effects and animation",
+  "path": "lesson10/jQuery_animation/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "scripts/jquery-1.11.1.js",
+      "hidden": true
+    },
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "printVer": "print/index.html",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "readOnly": false
+    },
+    {
+      "original": "CSS_small.png",
+      "hidden": true
+    },
+    {
+      "original": "JSLogo_small.png",
+      "hidden": true
+    }
+  ]
+}

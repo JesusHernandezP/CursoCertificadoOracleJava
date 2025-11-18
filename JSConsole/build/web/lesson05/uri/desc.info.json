@@ -1,0 +1,22 @@
+{
+  "title": "JavaScript URI",
+  "desc": "Encode and decode URIs.",
+  "path": "lesson05/uri/",
+  "main": "index.html",
+  "previewHidden": true,
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    },
+    {
+      "original": "style.css",
+      "hidden": true
+    }
+  ]
+}

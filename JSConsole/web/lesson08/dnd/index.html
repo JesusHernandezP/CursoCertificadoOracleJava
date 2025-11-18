@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>Drag and Drop</title>
+    <meta charset="UTF-8">
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <div style="border: 1px solid blue;" ondragstart="drag(event)" draggable="true">DRAG ME!</div>
+    <br>
+    <div style="border: 1px solid red;" ondragover="dragOver(event)" ondrop="drop(event)">DROP HERE!</div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "title": "Exercise: JavaScript String Parsing",
+  "desc": "Parse strings to get data.",
+  "instructions": "instructions.html",
+  "path": "lesson05/parsing/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

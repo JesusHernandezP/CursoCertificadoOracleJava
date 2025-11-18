@@ -1,0 +1,21 @@
+{
+  "title": "Exercise: AJAX",
+  "desc": "Create simple AJAX calls",
+  "path": "lesson09/ajax/",
+  "main": "index.html",
+  "instructions": "instructions.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false",
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "data/data.json",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

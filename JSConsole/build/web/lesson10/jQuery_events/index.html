@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>jQuery Events</title>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <div id="myText">
+      Click this text to enlarge it
+    </div>
+    <br/>
+    <button onclick="addParagraph()">Add a paragraph</button>
+    <div id="myParagraphs">
+    </div>
+    <script>
+      function addParagraph() {
+        // create a paragraph element, the variable contains a reference to the p element
+        var newParagraphElement = document.createElement("p");
+        var text = "Pass the mouse over this text to enlarge it";
+        // create a text node
+        var newTextElement = document.createTextNode(text);
+        // insert the newly created text node into the node tree of paragraph
+        newParagraphElement.appendChild(newTextElement);
+
+        document.getElementById("myParagraphs").appendChild(newParagraphElement);
+      }
+    </script>    
+  </body>
+</html>

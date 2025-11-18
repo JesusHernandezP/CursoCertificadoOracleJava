@@ -1,0 +1,27 @@
+{
+  "title": "Practice: Manipulate HTML elements",
+  "desc": "Write JS code to handle elements in the document.",
+  "instructions": "instructions.html",
+  "path": "lesson04/practice_manipulating_DOM/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "practice": true,
+  "files": [
+    {
+      "original": "code.js",
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "index.html",
+      "readOnly": true
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    },
+    {
+      "original": "javascript.png",
+      "hidden": true
+    }
+  ]
+}

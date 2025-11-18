@@ -1,0 +1,26 @@
+{
+  "title": "HTML5 Form Submission",
+  "desc": "submit a form with HTML5 elements.",
+  "path": "lesson04/html5_form_submission/",
+  "main": "index_form_submit.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "hidden": true
+    },
+    {
+      "original": "index_form_submit.html",
+      "readOnly": false,
+      "printVer": "print/index_form_submit.html"
+    },
+    {
+      "original": "FormSubmissionServlet.java",
+      "readOnly": true
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

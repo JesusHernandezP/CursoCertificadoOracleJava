@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript Editor</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Tests", function() {
+        it("Set variable a to true", function() {
+          expect(a).toEqual(true);
+        });
+        it("Set variable b to true", function() {
+          expect(b).toEqual(true);
+        });
+        it("Set variable c to true", function() {
+          expect(c).toEqual(true);
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="test-header">
+      Some exercises will have you modify code to meet certain conditions.<br>
+      Notice the red header, this indicates that you need to modify your code to
+      pass the tests.<br>
+      After you modify your code click the run button, this will reload the tests. When you see a green bar it means you are done.<br>
+      To get more information about a condition click on it.
+    </div>
+    <div class="test-tip" title="Set variable a to true">
+      <div class="test-description">Set variable <code>a</code> to <code>true</code>.</div>
+      <div class="test-popup">To make this test pass you need to set a to true, this can be easily done with: <code>var a=true;</code></div>
+    </div>
+    <div class="test-tip" title="Set variable b to true">
+      <div class="test-description">Set variable <code>b</code> to <code>true</code>.</div>
+      <div class="test-popup">To make this test pass you need to set b to true, this can be easily done with: <code>var b=true;</code></div>
+    </div>
+    <div class="test-tip" title="Set variable c to true">
+      <div class="test-description">Set variable <code>c</code> to <code>true</code>.</div>
+      <div class="test-popup">To make this test pass you need to set c to true, this can be easily done with: <code>var c=true;</code></div>
+    </div>
+    <div class="test-footer">
+      To view the solution click on the View Solution button <button class="instrBtn" title="View Solution">
+        <span class="ui-button-icon-primary ui-icon ui-icon-comment"></span>
+      </button> in the top toolbar.<br>
+      You can revert to the initial version of the file using the revert button <button class="instrBtn" title="Revert to Original">
+        <span class="ui-button-icon-primary ui-icon ui-icon-arrowreturnthick-1-w"></span>
+      </button> in the top toolbar. Be careful since this button will revert all your changes.
+    </div>
+    <script>
+      $(function() {
+        $(".instrBtn").button();
+      });
+    </script>
+  </body>
+</html>

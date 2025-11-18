@@ -1,0 +1,20 @@
+{
+  "title": "JavaScript Arrays",
+  "desc": "Use arrays as collections.",
+  "path": "lesson05/arrays/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html"
+    },
+    {
+      "original": "style.css",
+      "hidden": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Workers",
+  "desc": "JavaScript workers",
+  "path": "lesson08/workers/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "worker.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

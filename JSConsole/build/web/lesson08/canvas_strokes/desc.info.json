@@ -1,0 +1,15 @@
+{
+  "title": "Html5 Canvas Strokes.",
+  "desc": "Canvas strokes.",
+  "path": "lesson08/canvas_strokes/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

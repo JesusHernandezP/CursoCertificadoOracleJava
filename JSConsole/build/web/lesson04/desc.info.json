@@ -1,0 +1,23 @@
+[
+  {
+    "link": "/lesson04/html5_sections/desc.info.json"
+  },
+  {
+    "link": "/lesson04/html5_forms/desc.info.json"
+  },
+  {
+    "link": "/lesson04/html5_form_validation/desc.info.json"
+  },
+  {
+    "link": "/lesson04/html5_form_submission/desc.info.json"
+  },
+  {
+    "link": "/lesson04/html5_events/desc.info.json"
+  },
+  {
+    "link": "/lesson04/dom_manipulation/desc.info.json"
+  },
+  {
+    "link": "/lesson04/practice_manipulating_DOM/desc.info.json"
+  }
+]

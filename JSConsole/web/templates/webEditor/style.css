@@ -1,0 +1,6 @@
+body{font-family: arial, verdana, helvetica}
+#instructions{position: absolute; top: 0;bottom: 0; right: 0; height: 100%;}
+#editor{position: absolute; top: 0; left: 0;}
+h3{margin-left: 2pt; margin-bottom: 0; margin-top: 0}
+#urlContainer{margin-left: 2pt; margin-right: 10pt; padding: 2pt; border: 1pt solid #666666; text-decoration: none; color: #000000;}
+#previewFrame{margin-top: 10pt; padding-top: 5pt; border-top: 1pt solid #000000;}

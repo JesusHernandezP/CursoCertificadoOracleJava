@@ -1,0 +1,22 @@
+{
+  "title": "HTML5 Sections",
+  "desc": "Divide the document by sections.",
+  "path": "lesson04/html5_sections/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "hidden": true
+    },
+    {
+      "original": "index.html",
+      "readOnly": false,
+      "printVer": "print/index.html"
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

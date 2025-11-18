@@ -1,0 +1,19 @@
+{
+  "title": "JavaScript Examples",
+  "desc": "Example of a JavaScript only environment.",
+  "path": "lesson01/javaScriptExample/",
+  "main": "index.html",
+  "previewHidden": "true",
+  "runnable": false,
+  "practice": true,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

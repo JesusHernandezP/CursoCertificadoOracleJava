@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>REST test</title>
+    <meta charset="UTF-8">
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showAdd();">Add a car</a></li>
+        <li><a href="#" onclick="showList();">View Cars</a></li>
+      </ul>
+    </nav>
+    <section id="sec_add">
+      <h1>Add Car</h1>
+      <div>
+        name:<input type="text" id="addName">
+        color:<input type="text" id="addColor"><br>
+        model:<input type="text" id="addModel">
+        year:<input type="text" id="addYear"><br>
+        <input type="button" value="Add Car" onclick="add();">
+      </div>
+    </section>
+    <section id="sec_list">
+      <h1>Car List</h1>
+      <div>
+        <ul id="carList">
+          <li><a href="#" >CarName</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="sec_update">
+      <h1>Update Car</h1>
+      <div>
+        name:<span id="updNameText"></span><input type="hidden" id="updName">
+        color:<input type="text" id="updColor"><br>
+        model:<input type="text" id="updModel">
+        year:<input type="text" id="updYear"><br>
+        <input type="button" value="Update Car" onclick="update();">
+        <input type="button" value="Delete Car" onclick="removeCar();">
+      </div>
+    </section>
+    <section id="sec_loading">
+      <h1>LOADING...</h1>
+    </section>
+  </body>
+</html>

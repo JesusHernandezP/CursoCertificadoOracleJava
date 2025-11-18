@@ -1,0 +1,15 @@
+{
+  "title": "Html5 Canvas Curves.",
+  "desc": "Canvas curves.",
+  "path": "lesson08/canvas_curves/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

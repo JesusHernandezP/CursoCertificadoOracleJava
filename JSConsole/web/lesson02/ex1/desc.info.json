@@ -1,0 +1,22 @@
+{
+  "title": "Welcome",
+  "desc": "Welcome to the JavaScript and HTML5, develop web applications course!",
+  "path": "lesson02/ex1/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "practice": true,
+  "files": [
+    {
+      "original": "index.html",
+      "readOnly": false
+    },
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "readOnly": false
+    }
+  ]
+}

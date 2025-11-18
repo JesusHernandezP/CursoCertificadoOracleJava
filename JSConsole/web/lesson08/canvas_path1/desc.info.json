@@ -1,0 +1,15 @@
+{
+  "title": "Html5 Canvas Basic Paths.",
+  "desc": "Canvas basic paths.",
+  "path": "lesson08/canvas_path1/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

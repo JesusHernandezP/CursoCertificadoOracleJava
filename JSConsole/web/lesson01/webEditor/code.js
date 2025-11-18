@@ -1,0 +1,1 @@
+console.log("JavaScript code will run as well if it is included in the index.html of the example!");

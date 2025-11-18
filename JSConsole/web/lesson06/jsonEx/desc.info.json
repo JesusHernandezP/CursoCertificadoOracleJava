@@ -1,0 +1,18 @@
+{
+  "title": "Exercise: JSON parsing and generation",
+  "desc": "Convert objects to JSON strings and back.",
+  "instructions": "instructions.html",
+  "path": "lesson06/jsonEx/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

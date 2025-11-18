@@ -1,0 +1,12 @@
+{
+  "title":"SimpleApp Test", 
+  "desc":"Simple examples",
+  "instructions":"instructions.html",
+  "path":"lesson02/ex1/",
+  "main":"index.html",
+  "files":[
+      {"name":"index.html", "original":"index.html","solution":"solution/index.html"},
+      {"name":"style.css", "original":"style.css", "hidden":true},
+      {"name":"js.js", "original":"js.js"}
+  ]
+}

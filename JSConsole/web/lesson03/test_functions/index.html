@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript Functions</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Functions test", function() {
+        it("Should check that there is a function called sum that sums a and b variables", function() {
+          expect(a + b).toEqual(sum(a, b));
+        });
+        it("Should check that there is a method in myObject called sum that sums a and b variables", function() {
+          expect(a + b).toEqual(myObject.sum(a, b));
+        });
+        it("Should check that there is a function named sum in the prototype of Operation that sums a and b variables", function() {
+          expect(Operation.prototype.sum).toBeDefined();
+          expect(a + b).toEqual(myFunction.sum(a, b));
+        });
+        it("Should check that the function throws an exception", function() {
+          expect(myErrorFunction).toThrow();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-tip" title="Should check that there is a function called sum that sums a and b variables">
+      <div class="test-description">Create a function named <code>sum</code>.</div>
+      <div class="test-popup">To make this test pass you need to create a function named <code>sum</code> and inside the function sum the variables passed as parameters and return the result.</div>
+    </div>
+    <div class="test-tip" title="Should check that there is a method in myObject called sum that sums a and b variables">
+      <div class="test-description">Create a function and assign it to a variable named <code>sum</code>.</div>
+      <div class="test-popup">To make this test pass you need to create a function and assign it to a variable named <code>sum</code> inside the <code>myObject</code> object.</div>
+    </div>
+    <div class="test-tip" title="Should check that there is a function named sum in the prototype of Operation that sums a and b variables">
+      <div class="test-description">Create a function and assign it to a <code>sum</code> property.</div>
+      <div class="test-popup">To make this test pass you need to create a function and assign it to the <code>sum</code> property of <code>Operation.prototype</code>.</div>
+    </div>
+    <div class="test-tip" title="Should check that the function throws an exception">
+      <div class="test-description">Throw an exception with <code>throw</code>.</div>
+      <div class="test-popup">To make this test pass you need to throw an exception with the <code>throw</code> keyword inside the <code>myErrorFunction</code> function.</div>
+    </div>
+  </body>
+</html>

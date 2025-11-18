@@ -1,0 +1,15 @@
+{
+  "title": "Drag and Drop.",
+  "desc": "HTML5 Drag and Drop JavaScript Events.",
+  "path": "lesson08/dnd/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

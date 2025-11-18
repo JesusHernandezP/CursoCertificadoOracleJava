@@ -1,0 +1,22 @@
+{
+  "title": "WebSocket",
+  "desc": "WebSocket chat",
+  "path": "lesson09/websocket_chat/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html",
+      "printVer": "print/index.html"
+    },
+    {
+      "original": "styles.css"
+    },
+    {
+      "original": "ChatWebSocket.java"
+    }
+  ]
+}

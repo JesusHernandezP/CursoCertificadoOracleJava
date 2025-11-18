@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript Tests</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Data Parser", function() {
+        it("Create JSON string to parse Object", function() {
+          expect(JSON.parse(jsonObject1)).toEqual({name: "John", age: 32});
+        });
+        it("Create JSON string to parse arrays", function() {
+          expect(JSON.parse(jsonArray1)).toEqual([1, 2, 3]);
+        });
+        it("Create JSON string to parse Object II", function() {
+          expect(JSON.parse(jsonObject2)).toEqual({name: "John", age: 32, level: "A", scores: {math: 100, history: 75}});
+        });
+        it("Create JSON string to parse arrays II", function() {
+          expect(JSON.parse(jsonArray2)).toEqual([1, 2, "a", "b", {name: "Ed"}]);
+        });
+        it("Parse object", function() {
+          expect(object2).toEqual({name: "John", age: 32, level: "A", scores: {math: 100, history: 75}});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-header">
+      Set the variables with JSON Strings
+    </div>
+    <div class="test-tip" title="Create JSON string to parse Object">
+      <div class="test-description">Set the variable jsonObject1 to the JSON string of: {name:"John", age: 32}</div>
+      <div class="test-popup">Solution:
+        <code>var jsonObject1 = "{\"name\":\"John\", \"age\": 32}";</code>
+      </div>
+    </div>
+    <div class="test-tip" title="Create JSON string to parse arrays">
+      <div class="test-description">Set the variable jsonArray1 to the JSON string of: [1,2,3]</div>
+      <div class="test-popup">Solution:
+        <code>var jsonArray1 = "[1,2,3]";</code>
+      </div>
+    </div>
+    <div class="test-tip" title="Create JSON string to parse Object II">
+      <div class="test-description">Set the variable jsonObject2 to the JSON string of: {name:"John", age: 32, level:"A", scores:{math:100, history:75}}</div>
+      <div class="test-popup">Solution:
+        <code>var jsonObject2 = "{\"name\":\"John\", \"age\": 32, \"level\":\"A\", \"scores\":{\"math\":100, \"history\":75}}";</code>
+      </div>
+    </div>
+    <div class="test-tip" title="Create JSON string to parse arrays II">
+      <div class="test-description">Set the variable jsonArray1 to the JSON string of: [1,2,"a","b",{name:"Ed"}]</div>
+      <div class="test-popup">Solution:
+        <code>var jsonArray2 = "[1,2,\"a\",\"b\",{\"name\":\"Ed\"}]";</code>
+      </div>
+    </div>
+    <div class="test-tip" title="Parse object">
+      <div class="test-description">Parse the jsonObject2 variable and set it to the object2 variable.</div>
+      <div class="test-popup">Solution:
+        <code>var object2 = JSON.parse(jsonObject2);</code>
+        <br>
+        In order for this to work the previous test must pass.
+      </div>
+    </div>
+    <div class="test-footer">
+      Remember that in JSON strings the object's attributes must be double quoted!<br>
+      One simple way to accomplish this is to use JavaScript Strings with a single quote:<br>
+      <code>'{"name":"John", "age": 32}'</code><br>
+    </div>
+  </body>
+</html>

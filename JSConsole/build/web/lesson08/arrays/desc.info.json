@@ -1,0 +1,16 @@
+{
+  "title": "Array Extended API.",
+  "desc": "Array API with callbacks.",
+  "path": "lesson08/arrays/",
+  "main": "index.html",
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

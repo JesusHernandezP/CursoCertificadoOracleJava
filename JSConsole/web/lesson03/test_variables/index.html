@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>Variables Test</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Variables test", function() {
+        it("Should check that variable a is Undefined type", function() {
+          expect(a).toBeUndefined();
+        });
+        it("Should check that variable b is Null type", function() {
+          expect(b).toBeNull();
+        });
+        it("Should check that variable c is Boolean type", function() {
+          expect(c).toEqual(jasmine.any(Boolean));
+        });
+        it("Should check that variable d is String type", function() {
+          expect(d).toEqual(jasmine.any(String));
+        });
+        it("Should check that variable e is Number type", function() {
+          expect(e).toEqual(jasmine.any(Number));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-header">In this practice set the variables values to pass the tests</div>
+    <div class="test-tip" title="Should check that variable a is Undefined type">
+      <div class="test-description">Set variable <code>a</code> to <code>undefined</code>.</div>
+      <div class="test-popup">To make this test pass you need to set a to undefined, this can be easily done with: <code>var a;</code></div>
+    </div>
+    <div class="test-tip" title="Should check that variable b is Null type">
+      <div class="test-description">Set variable <code>b</code> to <code>null</code>.</div>
+      <div class="test-popup">To make this test pass you need to set b to a null value, this can be easily done with: <code>var b = null;</code></div>
+    </div>
+    <div class="test-tip" title="Should check that variable c is Boolean type">
+      <div class="test-description">Set variable <code>c</code> to a boolean value.</div>
+      <div class="test-popup">To make this test pass you need to set c to a boolean value, this can be easily done with: <code>var c = false;</code></div>
+    </div>
+    <div class="test-tip" title="Should check that variable d is String type">
+      <div class="test-description">Set variable <code>d</code> to a string value.</div>
+      <div class="test-popup">To make this test pass you need to set d to a string value, this can be easily done with: <code>var d = "This is a String";</code></div>
+    </div>
+    <div class="test-tip" title="Should check that variable e is Number type">
+      <div class="test-description">Set variable <code>e</code> to a numeric value.</div>
+      <div class="test-popup">To make this test pass you need to set e to a numeric value, this can be easily done with: <code>var e = 14.8;</code></div>
+    </div>
+    <div class="test-footer"></div>
+  </body>
+</html>

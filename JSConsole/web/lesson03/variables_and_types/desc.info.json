@@ -1,0 +1,22 @@
+{
+  "title": "Variables and Types",
+  "desc": "Examples for Variables and Types",
+  "path": "lesson03/variables_and_types/",
+  "main": "index.html",
+  "previewHidden": "true",
+  "runnable": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

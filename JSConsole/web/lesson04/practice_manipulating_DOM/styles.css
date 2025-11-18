@@ -1,0 +1,21 @@
+#table1 {
+  width: 100%;
+}
+th {
+  background-color: black;
+  color: white;
+  text-indent: 10px;
+  text-align: left;
+  width: 8em;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(0, 255, 0, 0.1); /* green, 10% alpha */
+}
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 0, 0, 0.1); /* red, 30% alpha */
+}
+
+.underline {
+  text-decoration: underline;    
+}

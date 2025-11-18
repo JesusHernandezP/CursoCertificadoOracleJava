@@ -1,0 +1,18 @@
+{
+  "title": "Objects",
+  "desc": "Examples for Objects",
+  "path": "lesson03/objects/",
+  "main": "index.html",
+  "previewHidden": "true",
+  "runnable": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

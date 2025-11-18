@@ -1,0 +1,20 @@
+{
+  "title": "JavaScript Parsing Dates",
+  "desc": "Parse and validate dates.",
+  "path": "lesson05/dates/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html"
+    },
+    {
+      "original": "style.css",
+      "hidden": true
+    }
+  ]
+}

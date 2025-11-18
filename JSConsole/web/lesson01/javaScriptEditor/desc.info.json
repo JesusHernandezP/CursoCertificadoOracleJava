@@ -1,0 +1,20 @@
+{
+  "title": "JavaScript Editor",
+  "desc": "Review and edit JavaScript code.",
+  "instructions": "instructions.html",
+  "path": "lesson01/javaScriptEditor/",
+  "main": "index.html",
+  "previewHidden": "true",
+  "runnable": false,
+  "practice": true,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

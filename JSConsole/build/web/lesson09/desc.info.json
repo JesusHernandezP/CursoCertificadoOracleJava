@@ -1,0 +1,11 @@
+[
+  {
+    "link": "/lesson09/ajax/desc.info.json"
+  },
+  {
+    "link": "/lesson09/rest/desc.info.json"
+  },
+  {
+    "link": "/lesson09/websocket_chat/desc.info.json"
+  }
+]

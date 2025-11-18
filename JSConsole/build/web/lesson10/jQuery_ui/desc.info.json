@@ -1,0 +1,38 @@
+{
+  "title": "jQuery UI",
+  "desc": "Try some jQuery UI components",
+  "path": "lesson10/jQuery_ui/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "scripts/jquery-1.11.1.js",
+      "hidden": true
+    },
+    {
+      "original": "scripts/jquery-ui-1.11.1.custom/jquery-ui.js",
+      "hidden": true
+    },
+    {
+      "original": "scripts/jquery-ui-1.11.1.custom/jquery-ui.css",
+      "hidden": true
+    },
+    {
+      "original": "scripts/jquery-ui-1.11.1.custom/jquery-ui.theme.css",
+      "hidden": true
+    },
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "index.html",
+      "printVer": "print/index.html",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

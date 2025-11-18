@@ -1,0 +1,18 @@
+{
+  "title": "Prototypes.",
+  "desc": "JavaScript Prototype Inheritance.",
+  "path": "lesson08/prototypes/",
+  "main": "index.html",
+  "previewHidden": true,
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

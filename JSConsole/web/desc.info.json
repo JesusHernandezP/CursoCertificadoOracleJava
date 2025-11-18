@@ -1,0 +1,12 @@
+[
+  {"title":"Lesson 01 Introduction", "items":"/lesson01/desc.info.json"},    
+  {"title":"Lesson 02 Web Application Essentials", "items":"/lesson02/desc.info.json"},    
+  {"title":"Lesson 03 JavaScript Fundamentals", "items":"/lesson03/desc.info.json"},    
+  {"title":"Lesson 04 Combining HTML5 and JavaScript in Web Applications", "items":"/lesson04/desc.info.json"},    
+  {"title":"Lesson 05 The JavaScript API", "items":"/lesson05/desc.info.json"},    
+  {"title":"Lesson 06 Application Data", "items":"/lesson06/desc.info.json"},    
+  {"title":"Lesson 07 Style Applications using CSS3 and JavaScript", "items":"/lesson07/desc.info.json"},    
+  {"title":"Lesson 08 Advanced JavaScript", "items":"/lesson08/desc.info.json"},    
+  {"title":"Lesson 09 AJAX and WebSocket", "items":"/lesson09/desc.info.json"},    
+  {"title":"Lesson 10 Developing Applications with JQuery", "items":"/lesson10/desc.info.json"}
+]

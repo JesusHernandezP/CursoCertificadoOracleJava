@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-2.0.0.org/jasmine.css">
+    <script type="text/javascript" src="jasmine/lib/jasmine-2.0.0.org/jasmine.js"></script>
+    <script type="text/javascript" src="jasmine/lib/jasmine-2.0.0.org/jasmine-html.js"></script>
+    <script type="text/javascript" src="jasmine/lib/jasmine-2.0.0.org/boot.js"></script>
+    <script>
+      describe("Data Parser", function() {
+        it("Checking AJAX connections...", function() {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.open("GET", "http://localhost:8080/JSConsole/rest/restaurants", false);
+          xmlhttp.send();
+          expect(xmlhttp.readyState).toBe(4);
+          expect(xmlhttp.status).toBe(200);
+        });
+        it("Main portal", function() {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.open("GET", "http://localhost:8080/JSConsole/", false);
+          xmlhttp.send();
+          expect(xmlhttp.readyState).toBe(4);
+          expect(xmlhttp.status).toBe(200);
+        });
+        it("Example Run", function() {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.open("GET", "http://localhost:8080/JSConsole/view/lesson01/javaScriptEditor/index.html", false);
+          xmlhttp.send();
+          expect(xmlhttp.readyState).toBe(4);
+          expect(xmlhttp.status).toBe(200);
+        });
+        it("Edit Page", function() {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.open("GET", "http://localhost:8080/JSConsole/edit/lesson01/javaScriptEditor/", false);
+          xmlhttp.send();
+          expect(xmlhttp.readyState).toBe(4);
+          expect(xmlhttp.status).toBe(200);
+        });
+        describe("websocket", function() {
+          var socket = undefined;
+          beforeEach(function() {
+            socket = new WebSocket("ws://localhost:8080/JSConsole/ws/gameWebSocket");
+          });
+          it("Should be connected", function(done) {
+            socket.onopen = function() {
+              expect(socket.readyState).toBe(1);
+              done();
+            };
+          });
+          afterEach(function() {
+            socket.close();
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Strings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    Get the data from the json file using AJAX and display it in the content div
+    <ol>
+      <li>Create an XMLHttpRequest object.</li>
+      <li>Open an asynchronous GET request to the <code>data/data.json</code> URI.</li>
+      <li>Add an onreadystatechange or onload callback to handle the response</li>
+      <li>Inside the callback parse the JSON string contained inside the responseText property of the XMLHttpResponse object.</li>
+      <li>Construct a String with the content and set it to the innerHTML of the content HTML element.</li>
+    </ol>
+    <b>Look at the received object in the data.json file</b>
+    <h4>Quick Reference</h4>
+    <h5>Create AJAX Request</h5>
+    <ol>
+      <li>Create XMLHttpRequest Object.<br>
+        <code>var xmlhttp = new XMLHttpRequest();</code>
+      </li>
+      <li>Open the request with the HTTP method and url.<br>
+        <code>xmlhttp.open(METHOD, URL, true);</code><br>
+        in this exercise the call would be:<br>
+        <code>xmlhttp.open("GET", "data/data.json", true);</code></li>
+      <li>Add the callback:
+        <pre><code>xmlhttp.onreadystatechange = function() {
+  if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+    // handle response!
+  }
+};</code></pre>
+        To parse a JSON response use:<br>
+        <code>var personData = JSON.parse(xmlhttp.responseText);</code>
+      </li>
+      <li>Send the request:<br>
+        <code>xmlhttp.send();</code></li>
+    </ol>
+    <h5>DOM Manipulation</h5>
+    <ol>
+      <li>Get the element<br>
+        <code>var content = document.getElementById("content").innerHTML;</code><br>
+        Add/Remove child nodes<br>
+        <code>content.appendChild(element);</code><br>
+        <code>content.removeChild(element);</code><br>
+      </li>
+      <li>Create elements using:<br>
+        <code>document.createElement("TAG NAME");</code><br>
+        <code>document.createTextNode("TEXT");</code><br>
+      </li>
+      <li>Or simply use innerHTML:<br>
+        <code>content.innerHTML = "SOME HTML";</code></li>
+    </ol>
+  </body>
+</html>

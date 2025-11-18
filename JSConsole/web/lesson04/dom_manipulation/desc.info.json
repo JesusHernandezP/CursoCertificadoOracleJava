@@ -1,0 +1,21 @@
+{
+  "title": "DOM Manipulation",
+  "desc": "Alter the structure of the document.",
+  "path": "lesson04/dom_manipulation/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "hidden": false
+    },
+    {
+      "original": "index.html",
+      "readOnly": false
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

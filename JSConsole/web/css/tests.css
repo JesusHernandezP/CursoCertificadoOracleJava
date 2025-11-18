@@ -1,0 +1,13 @@
+.test-tip{}
+.test-popup{color:#0073ea !important;}
+.test-description{color:#0073ea; padding-left: 10px;}
+.test-header{color:#0073ea; padding-left: 0; padding-bottom: 5px; border-bottom: 1px solid #555555;}
+.test-footer{color:#0073ea; padding-left: 0; padding-top: 5px; border-top: 1px solid #555555;}
+.expectationDetail{color:#555555;}
+code{font-family: courier new, courier, monospace; font-weight: bold; color: #000000;}
+.ui-dialog-content{
+  font-size: 8pt;
+}
+.ui-dialog-title{
+  font-size: 8pt;
+}

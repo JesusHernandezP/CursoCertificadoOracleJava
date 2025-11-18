@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript Tests</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Array Extended API", function() {
+        it("Sum the total", function() {
+          expect(Math.round(total)).toBe(580);
+        });
+        it("Sum electronics", function() {
+          expect(Math.round(electronicsTotal)).toBe(306);
+        });
+        it("Add all tags", function() {
+          expect(allTags).toEqual({electronics: 3, computing: 3, "printed material": 2});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-tip" title="Sum the total">
+      <div class="test-description">
+        Use map - reduce on the items array to get the total.
+      </div>
+      <div class="test-popup">
+        You can use map reduce technique or a direct redude in this exercise.<br>
+        Map-Reduce:
+        <pre><code>var total = items.map(function(item){
+   return item.price;
+}).reduce(function(prevVal, item){
+   var totalValue = prevVal+item;
+   return totalValue;
+}, 0);</code></pre>
+        Direct Reduce:
+        <pre><code>var total = items.reduce(function(prevVal, item){
+   var totalValue = prevVal+item.price;
+   return totalValue;
+ }, 0);</code></pre>
+      </div>
+    </div>
+    <div class="test-tip" title="Sum electronics">
+      <div class="test-description">
+        Filter the items array using the array.some method and then map - reduce to get the total of electronics.
+      </div>
+      <div class="test-popup">
+        Filter all the items and then invoke the some function on the tags array.
+        <pre><code>var electronicsTotal=items.filter(function(item) {
+  return item.tags.some(function(tag) {
+    return tag === "electronics";
+  });
+})</code></pre>
+        Add the map-reduce function from the previous exercise to complete this exercise.
+      </div>
+    </div>
+    <div class="test-tip" title="Add all tags">
+      <div class="test-description">
+        Use forEach on the items and tag arrays to add tags to the allTags object.
+      </div>
+      <div class="test-popup">
+        Call a for each on the items array and then another for each in the tags array:
+        <pre><code>items.forEach(function(item) {
+  item.tags.forEach(function(tag) {
+    allTags[tag] = allTags[tag] || 0;
+    allTags[tag]++;
+  });
+});</code></pre>
+      </div>
+    </div>
+    <div class="test-footer">
+      <h4>Array Reference</h4>
+      <code>array.map(function(item){<br>
+        &nbsp;&nbsp;return item.property;<br>
+        })</code><br>
+      This function returns a new array formed of the result of invoking the
+      callback on every element of the array.<br>
+      <br>
+      <code>array.reduce(function(prevVal, item){<br>
+        &nbsp;&nbsp;var totalValue = prevVal+item;<br>
+        &nbsp;&nbsp;return totalValue;<br>
+        }, initialValue)</code><br>
+      This function returns a single value with the result of invoking the callback
+      on all the items of the array. The value returned by the callback is the
+      next callback's prevVal. The first execution prevVal is initialValue.
+      The result is the last execution totalValue.<br>
+      <br>
+      <code>array.filter(function(item){<br>
+        &nbsp;&nbsp;return true|false;<br>
+        })</code><br>
+      This functions returns a new array with all the items that returned true 
+      when calling the callback function.<br>
+      <br>
+      <code>array.forEach(function(item){<br>
+        &nbsp;&nbsp;//Code<br>
+        })</code><br>
+      This functions executes the callback in all the elements of the array.<br>
+      <br>
+      <code>array.some(function(item){<br>
+        &nbsp;&nbsp;return true|false;<br>
+        })</code><br>
+      This function returns true if the callback function returns true for
+      at least one item in the array.<br>
+      <br>
+      <code>array.every(function(item){<br>
+        &nbsp;&nbsp;return true|false;<br>
+        })</code><br>
+      This function returns true if the callback function returns true for
+      all the items in the array.
+    </div>
+  </body>
+</html>

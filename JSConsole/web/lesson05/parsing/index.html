@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>parent.window.setDebugConsole();</script>
+    <title>JavaScript String Parsing</title>
+    <meta charset="UTF-8">
+    <script src="/JSConsole/js/testing-framework.js"></script>
+    <script src="code.js"></script>
+    <script>
+      describe("Data Parser", function() {
+        it("Parse first name", function() {
+          expect(person.firstName).toBe("John");
+        });
+        it("Parse last name", function() {
+          expect(person.lastName).toBe("Doe");
+        });
+        it("Parse age", function() {
+          expect(person.age).toBe(32);
+        });
+        it("Parse credit", function() {
+          expect(person.credit).toBe(153.25);
+        });
+        it("Parse rating", function() {
+          expect(person.rating).toBe("A");
+        });
+        it("Parse birthdate", function() {
+          expect(person.birthdate.getFullYear()).toBe(1982);
+          expect(person.birthdate.getMonth()).toBe(9);
+          expect(person.birthdate.getDate()).toBe(23);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="test-header">
+      In this exercise you have to parse the data variable and assign the values to the person object:<br>
+      Split the data variable using <code>var array = data.split(",")</code> function.
+    </div>
+    <div class="test-tip" title="Parse first name">
+      <div class="test-description">Set <code>person.name</code> to array[0]</div>
+      <div class="test-popup">Solution: <code>person.name = array[0];</code></div>
+    </div>
+    <div class="test-tip" title="Parse last name">
+      <div class="test-description">Set <code>person.lastName</code> to array[1]</div>
+      <div class="test-popup">Solution: <code>person.name = array[1];</code></div>
+    </div>
+    <div class="test-tip" title="Parse age">
+      <div class="test-description">Set <code>person.age</code> to array[2] as integer</div>
+      <div class="test-popup">Use <code>parseInt(array[2])</code></div>
+    </div>
+    <div class="test-tip" title="Parse credit">
+      <div class="test-description">Set <code>person.credit</code> to array[6] as float</div>
+      <div class="test-popup">Use <code>parseFloat(array[6])</code></div>
+    </div>
+    <div class="test-tip" title="Parse rating">
+      <div class="test-description">Set <code>person.rating</code> to array[7] as a trimmed string</div>
+      <div class="test-popup">Trim the string using: <code>array[7].trim()</code></div>
+    </div>
+    <div class="test-tip" title="Parse birthdate">
+      <div class="test-description">Set <code>person.birthdate</code> to year:array[3], month:array[4]-1 and dayOfMonth:array[5];</div>
+      <div class="test-popup">For this challenge you need to create a new Date and set the year, month, and day to their respective values.
+        <br>Remember the resulting date is: October 10th 1982<br>
+        The month in the date object must be set to 9! (0 based months, 0=January, 12=December)<br>
+        You can use the date constructor: <code>new Date(year, month, day, 0, 0, 0, 0);</code>
+      </div>
+    </div>
+    <div class="test-footer">
+      The person object should have the following values:
+      <code><pre>person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:32,
+  credit:153.25,
+  rating:"A",
+  birthdate: new Date("1982-10-23"),
+}</pre></code>      
+    </div>
+  </body>
+</html>

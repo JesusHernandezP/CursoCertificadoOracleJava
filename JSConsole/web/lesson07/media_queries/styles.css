@@ -1,0 +1,41 @@
+body {
+  background-color: grey;
+}
+.landscape {
+  display: none;
+}
+@media screen and (max-width: 1368px) {
+  body {
+    background-color: lightsteelblue;
+  }
+}
+@media screen and (max-width: 960px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: orange;
+  }
+} 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+} 
+@media screen and (max-width: 320px) {
+  body {
+    background-color: green;
+  }
+} 
+@media screen and (orientation: landscape){
+  .landscape {
+    display: block;
+  }
+}
+@media screen and (orientation: portrait){
+  .landscape {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "REST and AJAX",
+  "desc": "Restful services and AJAX",
+  "path": "lesson09/rest/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    },
+    {
+      "original": "Car.java"
+    },
+    {
+      "original": "CarsResource.java"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "link": "/lesson03/variables_and_types/desc.info.json"
+  },
+  {
+    "link": "/lesson03/expressions_and_operators/desc.info.json"
+  },
+  {
+    "link": "/lesson03/statements_and_loops/desc.info.json"
+  },
+  {
+    "link": "/lesson03/objects/desc.info.json"
+  },
+  {
+    "link": "/lesson03/arrays/desc.info.json"
+  },
+  {
+    "link": "/lesson03/functions/desc.info.json"
+  },
+  {
+    "link": "/lesson03/test_variables/desc.info.json"
+  },
+  {
+    "link": "/lesson03/test_objects/desc.info.json"
+  },
+  {
+    "link": "/lesson03/test_functions/desc.info.json"
+  }
+]

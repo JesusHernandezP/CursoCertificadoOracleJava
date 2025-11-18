@@ -1,0 +1,11 @@
+p {
+  display: block;
+}
+
+.box {
+  width: 140px;
+  height: 100px;
+  margin: 24px 48px; /*  24px 48px 24px 48px */
+  border: 1px solid blue;
+  padding: 12px 18px 6px; /*  12px 18px 6px 18px */
+}

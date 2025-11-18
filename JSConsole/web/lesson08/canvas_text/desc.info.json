@@ -1,0 +1,15 @@
+{
+  "title": "Html5 Canvas Text.",
+  "desc": "Canvas text.",
+  "path": "lesson08/canvas_text/",
+  "main": "index.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html"
+    }
+  ]
+}

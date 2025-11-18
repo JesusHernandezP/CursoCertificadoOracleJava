@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Strings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    In this exercise you convert the cookies example using local storage.<br>
+    In the window load listener:
+    <ol>
+      <li>Get the saved value inside the localStorage key: "storedObject".</li>
+      <li>Parse the stored data using JSON and assign it to storedObject if it is not empty.</li>
+    </ol>
+    In the addProperty function:
+    <ol>
+      <li>add the property to the storedObject variable.</li>
+      <li>Save the JSON string representation of the storedObject variable in the localStorage with the key: "storedObject".</li>
+    </ol>
+    In the removeProperty function:
+    <ol>
+      <li>Delete the property to the storedObject variable.</li>
+      <li>Save the JSON string representation of the storedObject variable in the localStorage with the key: "storedObject".</li>
+    </ol>
+
+    <h4>Local Storage Reference</h4>
+    Get a value:<br>
+    <code>localStorage.getItem("storedObject")</code><br>
+    Set a value:<br>
+    <code>localStorage.setItem("storedObject", value);</code>
+    <h4>JSON API</h4>
+    Parsing:<br>
+    <code>obj = JSON.parse(data);</code><br>
+    Generating JSON<br>
+    <code>JSON.stringify(obj);</code>
+    <h4>JavaScript Objects</h4>
+    Set a property:<br>
+    <code>obj[propertyName] = value;</code><br>
+    Delete a property:<br>
+    <code>delete obj[propertyName];</code>
+  </body>
+</html>

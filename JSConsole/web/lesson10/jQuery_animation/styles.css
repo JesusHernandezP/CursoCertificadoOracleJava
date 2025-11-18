@@ -1,0 +1,23 @@
+img {
+  float: left;
+}
+
+#myButtons, #animateButtons {
+  width: 100px;
+  float: left;
+  clear: both;
+}
+
+.buttons {
+  height: 65px;
+  width: 90px;
+}
+
+#animateButtons, #myImg {
+  padding: 100px 0px;
+}
+
+.resetImg {
+  height: 100px; 
+  width: 100px;
+}

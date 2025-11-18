@@ -1,0 +1,19 @@
+{
+  "title": "Exercise: JavaScript Arrays",
+  "desc": "Use array operations.",
+  "path": "lesson05/more_arrays/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "instructions": "instructions.html",
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": false,
+      "solution": "solution/code.js"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

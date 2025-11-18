@@ -1,0 +1,4 @@
+p:last-child::first-line {
+  color: red;
+  font-size: 200%;
+}

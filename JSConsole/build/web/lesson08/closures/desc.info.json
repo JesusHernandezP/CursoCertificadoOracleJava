@@ -1,0 +1,18 @@
+{
+  "title": "Closures.",
+  "desc": "Review closures",
+  "path": "lesson08/closures/",
+  "main": "index.html",
+  "previewHidden": true,
+  "runnable": false,
+  "files": [
+    {
+      "original": "code.js",
+      "readOnly": "false"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    }
+  ]
+}

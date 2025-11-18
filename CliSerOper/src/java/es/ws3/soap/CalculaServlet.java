@@ -15,7 +15,7 @@ import javax.xml.ws.WebServiceRef;
 public class CalculaServlet extends HttpServlet {
 
     @WebServiceRef(wsdlLocation
-            = "http://legion-y530:8080/WSServOper/ServOper?wsdl")
+            = "http://localhost:8080/WSServOper/ServOper?wsdl")
     private ServOper_Service service; // Servicio Web inyectado
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)

@@ -1,0 +1,22 @@
+{
+  "title": "Exercise: Write an HTML5 document",
+  "desc": "Write basic HTML5 elements.",
+  "instructions": "instructions.html",
+  "path": "lesson04/html5_doc/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "index.html",
+      "solution": "solution/index.html"
+    },
+    {
+      "original": "index.html",
+      "hidden": true
+    },
+    {
+      "original": "code.spec.js",
+      "hidden": true
+    }
+  ]
+}

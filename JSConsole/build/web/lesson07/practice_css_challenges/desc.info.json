@@ -1,0 +1,64 @@
+{
+  "title": "Practice: Styling Elements",
+  "desc": "Write CSS to style elements in the document.",
+  "instructions": "instructions.html",
+  "path": "lesson07/practice_css_challenges/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "practice": true,
+  "files": [
+    {
+      "original": "styles.css",
+      "solution": "solution/styles.css"
+    },
+    {
+      "original": "index.html",
+      "readOnly": true
+    },
+    {
+      "original": "code.js",
+      "solution": "solution/code.js",
+      "readOnly": false
+    },
+    {
+      "original": "code.spec.js",
+      "hidden": true
+    },
+    {
+      "original": "index_1.html",
+      "hidden": true
+    },
+    {
+      "original": "styles_1.css",
+      "hidden": true
+    },
+    {
+      "original": "styles_2.css",
+      "hidden": true
+    },
+    {
+      "original": "styles_3.css",
+      "hidden": true
+    },
+    {
+      "original": "styles_4.css",
+      "hidden": true
+    },
+    {
+      "original": "styles_5.css",
+      "hidden": true
+    },
+    {
+      "original": "styles_6.css",
+      "hidden": true
+    },
+    {
+      "original": "CSS_small.png",
+      "hidden": true
+    },
+    {
+      "original": "JavaScript_small.png",
+      "hidden": true
+    }
+  ]
+}

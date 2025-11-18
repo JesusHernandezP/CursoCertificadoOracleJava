@@ -1,0 +1,22 @@
+{
+  "title": "HTML5 Form Validation",
+  "desc": "Validate HTML5 form elements.",
+  "path": "lesson04/html5_form_validation/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "files": [
+    {
+      "original": "code.js",
+      "hidden": true
+    },
+    {
+      "original": "index.html",
+      "readOnly": false,
+      "printVer": "print/index.html"
+    },
+    {
+      "original": "styles.css",
+      "hidden": true
+    }
+  ]
+}

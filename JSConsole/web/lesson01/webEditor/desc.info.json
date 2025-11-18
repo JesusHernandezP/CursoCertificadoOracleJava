@@ -1,0 +1,22 @@
+{
+  "title": "Web Editor",
+  "desc": "Edit Web Pages with multiple files.",
+  "path": "lesson01/webEditor/",
+  "main": "index.html",
+  "previewHidden": "false",
+  "practice": true,
+  "files": [
+    {
+      "original": "index.html",
+      "readOnly": false
+    },
+    {
+      "original": "code.js",
+      "readOnly": false
+    },
+    {
+      "original": "style.css",
+      "readOnly": false
+    }
+  ]
+}
